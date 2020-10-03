@@ -1,0 +1,261 @@
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-logo{
+    position: relative;
+    margin-left: -41.5%;
+}
+.login-logo img{
+    position: absolute;
+    width: 20%;
+    margin-top: 19%;
+    background: #282726;
+    border-radius: 4.5rem;
+    padding: 5%;
+}
+
+.title{
+  font-family: 'Gugi', cursive;
+  font-weight: 400;
+  color: #45ccb8;
+  font-size: 50pt;
+  margin: 0 0 7% 0;
+    
+}
+
+.header-line:after {
+  content: '';
+  background: #C31F48;
+  display: block;
+  height: 5px;
+  width: 300px;
+  margin: 10px 1px 0 400px;
+}
+
+.login-form-1{
+    padding: 9%;
+    /* background:#580754; */
+    /* background: linear-gradient(to right,#138086,#534666); */
+    /* background: linear-gradient(to right,#47CACC,#CDB3D4); */
+    /* background: linear-gradient(to right,#4ADEDE,#1F2F98); */
+    /* background: linear-gradient(to right,#4097AA,#2D4057); */
+    background: linear-gradient(to right,#45ccb8,#45ccb8);
+    /* background: linear-gradient(to right,#e9e5e5,#fcf7f3); */
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color:#fff;
+}
+.login-form-2{
+    padding: 9%;
+    /* background: #f05837; */
+    /* background: linear-gradient(to right,#534666,#CD7672); */
+    /* background: linear-gradient(to right,#E7B7C8,#FFBE88); */
+    /* background: linear-gradient(to right,#FF9190,#FDC094); */
+    /* background: linear-gradient(to right,#8A5082,#FB7B8E); */
+    /* background: linear-gradient(to right,#FA9483,#F3DECA); */
+    /* background: linear-gradient(to right,#e9e5e5,#fcf7f3); */
+    /* background: linear-gradient(to right,#FF7B89,#FF7B89); */
+    background: linear-gradient(to right, #27293D, #27293D);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    margin-bottom:12%;
+    color: #fff;
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 50%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:2%;
+}
+.btnForgetPwd{
+    color: rgb(251, 251, 252);
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Gugi', cursive;
+    margin-left: 30%;
+
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:rgb(233, 13, 13);
+    
+}
+
+.circle {
+  background: #27293D;
+    /* background: #121212; */
+    /* background: linear-gradient(to right, #54504C, #282726); */
+    /* background: linear-gradient(to right,#D6CAB0,#86817C,#54504C, #282726); */
+    /* background: linear-gradient(to right,#2CA18C,#EEE2D1); */
+    /* color: linear-gradient(to right,#522157,#FFBE88);      */
+    clip-path: circle(50%);
+    height: 6em;
+    width: 6em;
+    position: absolute;
+    margin-top: 45%;
+    padding: 5%;
+  }
+
+  .follow-circle{
+    /* background: linear-gradient(to right,#FF7B89,#8A5082); */
+    background: #FF7B89;
+    height: 5em;
+    width: 5em;
+    margin: 5% 0 19% 70%;
+    padding: 5%;
+  }
+
+  .login-form-1 .follow-circle{
+    margin: 8.5% 0 19% 70%;
+    /* background: linear-gradient(to right,#120C6E,#5E72EB); */
+    background: #120C6E;
+  }
+
+  .user-icon{
+    background: rgb(251, 251, 252);
+    height: 8em;
+    width: 8em;
+    margin: 0 0 19% 25%;
+    padding: 5%;
+
+  }
+
+
+.fa-magic, .fa-dragon, .fa-sign-in-alt{
+    /* color: #0e0d0b; */
+    /* color: goldenrod; */
+    color: #C31F48;
+    /* margin-left: -7px; */
+  }
+
+  .fa-user-alt{
+    color: #E03616;
+      /* color: #120C6E; */
+      /* color: linear-gradient(to right,#522157,#FFBE88); */
+      margin: 10% 0 0 12%;
+  }
+
+  .fa-user-plus{
+    color: #E03616;
+      /* color: #FF7B89; */
+      margin: 12% 0 0 12%;
+  }
+
+  .check-text{
+    font-family: 'Gugi', cursive;
+    color: ivory;
+    margin: 30px 0 0 0;
+  }
+
+ .fa-arrow-right{
+     color: #000;
+    margin: 13% 0 0 20%;
+ }
+
+
+.text-input{
+  position: relative;
+  margin-top: 25px;
+}
+
+input[type="text"]{
+  display: inline-block;
+  width: 365px;
+  height: 35px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 10px 10px 10px 100px;
+  transition: all 0.1s ease-out;
+  font-family: 'Gugi', cursive;
+}
+    
+input[type="text"] + label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 35px;
+  line-height: 40px;
+  color: white;
+  border-radius: 3px 0 0 3px;
+  padding: 0 20px;
+  background: #E03616;
+  /* background: #6a0be7; */
+  transform: translateZ(0) translateX(0);
+  transition: all 0.3s ease-in;
+  transition-delay: 0.2s;
+}
+
+    /* .login-form-1 input[type="text"] + label{
+        background: #041cf0;
+    } */
+    
+    input[type="text"]:focus + label{
+      transform: translateY(0%) translateX(-90%);
+      border-radius: 3px;
+      transition: all 0.1s ease-out;
+    }
+    
+    input[type="text"]:focus{
+      padding: 10px;
+      transition: all 0.3s ease-out;
+      transition-delay: 0.2s;
+    }
+
+    .btn-foward {
+        background: #fff;
+        display:block;
+        height: 5em;
+        width: 5em;
+        margin: 5% 0 19% 78%;
+        padding: 5%;
+        border-radius: 50%;
+        
+        
+      }
+
+      .login-form-1 .btn-foward{
+        margin: 8.5% 0 19% 78%;
+        /* background: linear-gradient(to right,#120C6E,#5E72EB); */
+        background: #fff;
+      }
+
+      .btn-foward:hover{
+        color: white;
+        background: linear-gradient(to right,#feb154,#45ccb8);
+      }
+
+@media screen and (max-width: 768px) {
+  .title{
+    font-family: 'Gugi', cursive;
+    font-weight: 400;
+    color: #45ccb8;
+    font-size: 50px;
+    margin: 0 0 7% 0;
+      
+  }
+  
+  .header-line:after {
+    content: '';
+    background: #C31F48;
+    display: block;
+    height: 5px;
+    width: 200px;
+    margin: 10px 1px 0 100px;
+  }
+
+  .login-form-2{
+  margin-bottom: -22px;}
+
+}
