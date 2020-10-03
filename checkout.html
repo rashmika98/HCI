@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blinkee</title>
+        
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <!--Font Awsome CDN-->
+        <script src="https://kit.fontawesome.com/6d0a6cebb3.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Meddon&display=swap" rel="stylesheet">
+        
+
+        <!--Custom Stylesheet-->
+        
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/checkout.css">
+        
+
+        
+           <!-- JS, Popper.js, and jQuery -->
+           <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+           <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+
+        <!---jQuery---->
+        <!-- <script type="text/javascript" src="js/jQuery.js"></script> -->
+        <script type="text/javascript"  src="js/checkout.js"></script>
+
+        <!--lightslider.js
+        <script type="text/javascript" src="js/lightslider.js"></script>
+        <script type="text/javascript"  src="js/main.js"></script>-->
+
+        <!--Favicon Slider
+        <link rel="shortcut icon" href="assets/items/2018LogoFeatheredBlackBG2-5.gif">-->
+
+        <!--Slick Slider
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
+
+
+    </head>
+    <body>
+
+         <!-- Header -->
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 col-12">
+                <div class="btn-group">
+                    <button
+                            class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                    >
+                        $-USD
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">ERU-Euro</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+                <h2 class="my-md-3 site-title text-white">Blinkee Store</h2>
+            </div>
+            <div class="col-md-4 col-12 text-right">
+                <p class="my-md-4 header-links">
+                    <a href="#" class="px-2">Sign In</a>
+                    <a href="#" class="bg-black-color">|</a>
+                    <a href="#" class="px-1">Create an Account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <button class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="samole.html">SAMPLE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="custom.html">CUSTOM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ACCOUNT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ACCOUNT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ADVANCE</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav text-left">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 repeat-icon">
+                        <i class="fas fa-circle-notch p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 wishlist-icon">
+                        <i class="far fa-heart p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 basket-icon">
+                        <i class="fas fa-shopping-cart p-2"></i>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- /Header -->
+
+<!-- main section -->
+        <div class="container px-4 py-5 mx-auto">
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div><h1 class="header-line text-center">ORDER SUMMARY</h1><div class="text-right btn-edit"><a href="#">EDIT</a></div></div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row description">
+                                            <div class="my-auto flex-column d-flex pad-left">
+                                                <h6 class="mob-text">Homo Deus: A Brief History of Tomorrow</h6>
+                                                <p class="mob-text">Yuval Noah Harari</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h6 class="mob-text">QTY: 1</h6>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 class="mob-text">$0.36</h6>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cart-hr"><hr></div>
+
+                                <div class="row ">
+                                    <div class="col-lg-4">
+                                        <div class="book"> <img src="https://i.imgur.com/2DsA49b.jpg" class="book-img"> </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row description">
+                                            <div class="my-auto flex-column d-flex pad-left">
+                                                <h6 class="mob-text">Homo Deus: A Brief History of Tomorrow</h6>
+                                                <p class="mob-text">Yuval Noah Harari</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <h6 class="mob-text">QTY: 1</h6>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <h6 class="mob-text">$0.36</h6>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-4 mt-2 align-self-center">
+                                <div class="border border-danger note">
+                                    <div class="row d-flex justify-content-between px-4">
+                                        <p class="mb-1 text-left">Subtotal</p>
+                                        <h6 class="mb-1 text-right">$23.49</h6>
+                                    </div>
+                                    <div class="row d-flex justify-content-between px-4">
+                                        <p class="mb-1 text-left">Shipping</p>
+                                        <h6 class="mb-1 text-right">$2.99</h6>
+                                    </div>                                
+                                    <div class="row d-flex justify-content-between px-4">
+                                        <p class="mb-1 text-left">Total Tax</p>
+                                        <h6 class="mb-1 text-right">$2.99</h6>
+                                    </div>
+                                    <div class="summary-hr"><hr></div>
+                                    <div class="row d-flex justify-content-between px-4" id="tax">
+                                        <p class="mb-1 text-left">Total (tax included)</p>
+                                        <h6 class="mb-1 text-right">$26.48</h6>
+                                    </div> 
+                                </div>
+                                <button class="btn-block btn-blue"> <span> <span id="checkout">HAVE A COUPON</span> <i class="fas fa-chevron-circle-down"></i></span> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                
+                <div><h1 class="header-line text-center">PAYMENT SELECTION</h1></div>
+                
+                <div class="card bg-dark">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input radio-credit" type="radio" name="radio-pay" value="option1">
+                                <label class="form-check-label" for="radio-creit">
+                                    <h3 class="title">CREDIT CARD</h3>
+                                </label>
+                              </div>
+                            <div class = "row card-list">
+                                <!-- <div class="col-md-3"> -->
+                                    <i class="fab fa-cc-discover fa-3x"></i>
+                                <!-- </div>
+                                <div class="col-md-3">         -->
+                                    <i class="fab fa-cc-amex fa-3x"></i>
+                                <!-- </div>  
+                                <div class="col-md-3">     -->
+                                    <i class="fas fa-credit-card fa-3x"></i>
+                                <!-- </div>   -->
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+
+                            <div class="row sub-title">
+                                <div class="col-md-5">CARD NUMBER</div><div class="col-md-4">EXP</div><div class="col-md-3">CVC</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-1"></div><div class="col-md-4"><input type="text" class = "form-control row-card" name="cname"></div>
+                                <div class="col-md-1"></div><div class="col-md-3"><input type="text" class = "form-control row-card" name="exp"></div>
+                                <div class="col-md-1"></div><div class="col-md-2"><input type="text" class = "form-control row-card" name="cvc"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card bg-dark">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input radio-pal" type="radio" name="radio-pay" value="option1">
+                                        <label class="form-check-label" for="radio-creit">
+                                            <h3 class="title">PAYPAL</h3>
+                                        </label>
+                                    </div>
+                                    <div class = "row card-details">
+                                        <!-- <div class="col-md-3"> -->
+                                            <i class="fab fa-paypal fa-3x"></i>
+                                        <!-- </div> -->
+                                        <!-- <div class="col-md-3">         -->
+                                            <i class="fab fa-cc-paypal fa-3x"></i>
+                                        <!-- </div>    -->
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card border-success mb-3 describe" >
+                                        <div class="card-body">
+                                            <h5 class="card-title header-line-number title-describe text-left">PAY VIA PAYPAL</h5>
+                                            <div class="row">
+                                                <p class="card-text text-describe text-left">You can pay using your PayPal Account</p>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card bg-dark">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input radio-money" type="radio" name="radio-pay" value="option1">
+                                        <label class="form-check-label" for="radio-creit">
+                                            <h3 class="title">MONEY ORDER PAYMENT</h3>
+                                        </label>
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card border-success mb-3 describe" >
+                                        <div class="card-body">
+                                            <h5 class="card-title header-line-number title-describe text-left">PLEASE SEND YOUR MONEY TO</h5>
+                                            <div class="row">
+                                                <p class="card-text text-describe text-left">Blinkee.com.<br> LLC 769 Center BI STE 58, <br>Fairfax CA 94930</p>                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row row-button text-center">
+                    <button type="button" class="btn btn-primary btn-lg btn-block btn-proceed">CONFIRM ORDER</button>
+                </div>
+
+            </div>
+
+
+        </div>
+         <!-- end of the main section -->
+
+    <footer>
+        <!--footer--->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="assets/play-store.png">
+                            <img src="assets/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="assets/logo.png" alt="">
+                        <p>Magic Matt’s Brilliant Blinkys provides exciting
+                            glow in the dark toys, flashing jewelry, blinking pins,
+                            flashy blinkys and accessories for the twenty-first century.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Cart</li>
+                            <li>Checkout</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Account</li>
+                            <li>Custom</li>
+                            <li>Blinkee.com Resellers and Dropshippers</li>
+                            <li>Shipping Policy</li>
+                            <li>Return Policy</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 - Blinkee.com</p>
+            </div>
+        </section>
+    </footer>
+
+    <!-- <script src="bootstrap-input-spinner-master/src/bootstrap-input-spinner.js"></script>
+    <script>
+        $("input[type='number']").inputSpinner();
+    </script> -->
+
+    <!-- JS, Popper.js, and jQuery -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+        
+        
+    </body>
+</html>

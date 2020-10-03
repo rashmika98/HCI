@@ -1,0 +1,243 @@
+body {
+    color: #000;
+    font-family: 'Gugi', cursive;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #eef8ff;
+    background-repeat: no-repeat
+}
+
+h1{
+    color: #45ccb8;
+}
+
+.header-line{
+    margin-bottom: 25px;
+}
+
+.header-line:after{
+    content: '';
+    background:#C31F48;
+    display: block;
+    height: 5px;
+    width: 200px;
+    margin: 10px auto 1px;
+}
+
+.btn-edit{
+    margin-top: -80px;
+    font-size: 30px;
+}
+
+/* unvisited link */
+.btn-edit a:link {
+    color: #ff686b;
+  }
+  
+  /* visited link */
+  .btn-edit a:visited {
+    color:#fd7e14;
+  }
+  
+  /* mouse over link */
+  .btn-edit a:hover {
+    color: blue;
+  }
+  
+  /* selected link */
+  .btn-edit a:active {
+    color: #C31F48;
+  }
+
+.book,
+.book-img {
+    width: 120px;
+    height: 180px;
+    border-radius: 5px
+}
+
+.book {
+    margin: 20px 15px 5px 15px
+}
+
+.border-top {
+    border-top: 1px solid  lightgray !important;
+    margin-top: 20px;
+    padding-top: 15px
+}
+
+.description{
+    margin-top: 60px;
+}
+
+.description-follow{
+    border-top: rgb(214, 30, 214);
+    margin-top: 100px;
+}
+
+.card {
+    margin: 10px 0px 0px 0px;
+    padding: 40px 50px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.2)
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+
+#tax {
+    /* border-top: 1px lightgray solid; */
+    margin-top: 10px;
+    padding-top: 10px
+}
+
+.btn-blue {
+    border: none;
+    border-radius: 10px;
+    background-color: #673AB7;
+    color: #fff;
+    padding: 8px 15px;
+    margin: 20px 0px;
+    cursor: pointer
+}
+
+.btn-blue:hover {
+    background-color: #311B92;
+    color: #fff
+}
+
+#checkout {
+    float: left
+}
+
+#check-amt {
+    float: right
+}
+
+.note{
+   border-radius: 10px;
+   padding: 10px 5px;
+}
+
+.summary-hr{
+    width:300px;
+    margin: 0 5px -10px 2px;
+}
+.cart-hr{
+    width:600px;
+    margin: 0 5px -10px 2px;
+}
+
+.fa-chevron-circle-down{
+    margin-top: 5px;
+    float: right;
+}
+
+
+
+/* payment selection */
+.fa-cc-discover{
+    color: #fd7e14;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #343a40, white, white, #343a40);
+    margin-left: 20px;
+}
+.fa-cc-amex{
+    color: #007bff;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #343a40, white, white, #343a40);
+    /* background: #343a40; */
+    margin-left: 4px;
+}
+ 
+.fa-credit-card{                                                
+    color: #ff686b;                                            
+    /* background: rgb(240, 248, 244); */                                               
+    border-radius: 6px;                                               
+    background: linear-gradient(to bottom, #343a40, white, white, #343a40);
+    margin-left: 4px;
+                                            
+}
+
+.fa-paypal{
+    color: #007bff;
+    border-radius: 6px;
+    /* background: linear-gradient(to bottom, #343a40, white, white, #343a40); */
+}
+
+.fa-cc-paypal{
+    color: #007bff;
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #343a40, white, white, #343a40);
+    
+    
+}
+
+.title, .sub-title{
+    color: #fff;
+}
+
+.sub-title{
+    margin-bottom: 10px;
+}
+
+.title-describe{
+    color: #45ccb8;
+}
+
+.text-describe{
+    color: #ff686b;
+    font-size: 14px;
+}
+
+.describe{
+    padding: 5px;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+
+.row-button{
+    align-content: center;
+    margin: 50px 0 0 0;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.btn-proceed:hover{
+    background: linear-gradient(to right,#feb154,#45ccb8);
+}
+
+@media screen and (max-width: 768px) {
+
+    .book,
+    .book-img {
+        width: 100px;
+        height: 150px
+    }
+
+    .card {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+
+    .mob-text {
+        font-size: 13px
+    }
+
+    .pad-left {
+        padding-left: 20px
+    }
+
+    .cart-hr{
+        width: 300px;
+    }
+
+
+    
+}
