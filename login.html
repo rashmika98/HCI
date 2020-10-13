@@ -2,43 +2,56 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        
+          <script
+           src="https://kit.fontawesome.com/64d58efce2.js"
+           crossorigin="anonymous">
+        </script>
+           
+
         <title>Blinkee</title>
-        
+
         <!-- Bootstrap CDN -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Font Awsome CDN-->
+    <script src="https://kit.fontawesome.com/6d0a6cebb3.js" crossorigin="anonymous"></script>
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/login.css">
+
+    <!---light-slider.css---->
+    <!-- <link rel="stylesheet" type="text/css" href="css/lightslider.css"> -->
+
+    <!---jQuery---->
+    <!-- <script type="text/javascript" src="js/jQuery.js"></script> -->
+
+    <!--lightslider.js-->
+    <!-- <script type="text/javascript" src="js/lightslider.js"></script> -->
+    <!-- <script type="text/javascript"  src="js/main.js"></script> -->
+
+    <!--Favicon Slider-->
+    <!-- <link rel="shortcut icon" href="assets/items/2018LogoFeatheredBlackBG2-5.gif"> -->
+
+    <!--Slick Slider-->
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
         
-        <!--Font Awsome CDN-->
-        <script src="https://kit.fontawesome.com/6d0a6cebb3.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Meddon&display=swap" rel="stylesheet">
-
-        <!--Custom Stylesheet-->
         
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/login.css">
-
-        <!---jQuery---->
-        <script type="text/javascript" src="js/jQuery.js"></script>
+       
+        
+        
 
         
-        <!--lightslider.js
-        <script type="text/javascript" src="js/lightslider.js"></script>
-        <script type="text/javascript"  src="js/main.js"></script>-->
-
-        <!--Favicon Slider
-        <link rel="shortcut icon" href="assets/items/2018LogoFeatheredBlackBG2-5.gif">-->
-
-        <!--Slick Slider
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
         
-    </head>
+ </head>
     <body>
-        
+
         <!-- Header -->
-<header>
+        <header>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-12 col-12">
@@ -131,169 +144,154 @@
     </div>
 </header>
 <!-- /Header -->
-     
-        <!--main section-->
-        <div class="container login-container">
-        <div class = "title header-line text-center">Welcome...!!!!</div>
-            <div class="row">
-                <div class="col-md-6 login-form-1">
-                    <!-- <h3 style="font-family: 'Gugi', cursive;">Login Form 1</h3> -->
-                    <div class="border border-success rounded-circle user-icon">
-                        <i class="fas fa-user-alt fa-4x" aria-hidden="true"></i>
-                    </div>
-                    
-                    <!--<div class="form-group">
-                            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
-                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                    </div> 
-                    <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                    </div>-->
-                    <div class="text-input">
-                            <input type="text" id="input1" placeholder="Enter Username Here">
-                            <label for="input1"><i class="fa fa-user-o fa-fw"></i></label>
-                    </div>
-                    <div class="text-input">
-                        <input type="text" id="input1" placeholder="Enter Password Here">
-                        <label for="input1"><i class="fa fa-unlock-alt fa-fw"></i></label>
-                    </div>
-                     <div class="form-group">
-                           <a href="#" class="btnForgetPwd">Forget Password?</a>
-                     </div>
-                    <!-- <div class="form-group check-text">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                            Check me out
-                            </label>
-                        </div>
-                    </div> -->
-                    <div class="pretty p-icon p-smooth check-text">
-                        <input type="checkbox" />
-                        <div class="state p-danger">
-                            <i class="icon fa fa-check"></i>
-                            <label>REMEMBER ME</label>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <!-- <input type="submit" class="btnSubmit" value="Login" /> 
-                        <div class="border border-info rounded-circle follow-circle"><i class="fa fa-arrow-right fa-2x"></i></div>-->
-                        <a class="btn-foward" href="#"><i class="fa fa-arrow-right fa-2x"></i></a>
-                    </div>
-                        
-                </div>
 
-                <div class="col-md-6 login-form-2">
-                    <div class="login-logo">
-                        <!-- <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/> -->
-                        <!-- <div class="circle" style="font-family: 'Meddon', cursive;">Blinkee</div> -->
-                        <div class="circle"><i class="fas fa-sign-in-alt fa-3x"></i><!--<i class="fas fa-dragon fa-3x"></i><i class="fas fa-magic fa-3x">--></i></div>
-                    </div>
-                    <!-- <h3>Login Form 2</h3> -->
-                    <div class="border border-danger rounded-circle user-icon"><i class=" fas fa-user-plus fa-4x" aria-hidden="true"></i></div>
-                    
-                        <!-- <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" />
-                        </div> -->
-                        <div class="text-input">
-                            <input type="text" id="input1" placeholder="Enter Username Here">
-                            <label for="input1"><i class="fa fa-user-o fa-fw"></i></label>
-                        </div>
-                        <div class="text-input">
-                            <input type="text" id="input1" placeholder="Enter Password Here">
-                            <label for="input1"><i class="fa fa-unlock-alt fa-fw"></i></label>
-                        </div>
-                        <div class="text-input">
-                            <input type="text" id="input1" placeholder="Re-Enter Password Here">
-                            <label for="input1"><i class="fa fa-unlock fa-fw"></i></label>
-                        </div>
-                        <!-- <div class="form-group">
-                            <div class="form-check check-text">
-                              <input class="form-check-input" type="checkbox" id="gridCheck">
-                              <label class="form-check-label" for="gridCheck">
-                                Check me out
-                              </label>
-                            </div>
-                        </div> -->
-                        <div class="pretty p-icon p-smooth check-text">
-                            <input type="checkbox" />
-                            <div class="state p-danger">
-                                <i class="icon fa fa-check"></i>
-                                <label>I ACCEPT PRIVACY AND POLICY</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <!-- <input type="submit" class="btnSubmit" value="Login" />
-                            <div class="border border-danger rounded-circle follow-circle"><i class="fa fa-arrow-right fa-2x"></i></div>-->
-                            <a class="btn-foward" href="#"><i class="fa fa-arrow-right fa-2x"></i></a>
-                        </div>
-                        
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- end of the main section -->
-
-    <footer>
-        <!--footer--->
-        <section class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col-1">
-                        <h3>Download Our App</h3>
-                        <p>Download App for Android and ios mobile phone.</p>
-                        <div class="app-logo">
-                            <img src="assets/play-store.png">
-                            <img src="assets/app-store.png">
-                        </div>
-                    </div>
-                    <div class="footer-col-2">
-                        <img src="assets/logo.png" alt="">
-                        <p>Magic Matt’s Brilliant Blinkys provides exciting
-                            glow in the dark toys, flashing jewelry, blinking pins,
-                            flashy blinkys and accessories for the twenty-first century.</p>
-                    </div>
-                    <div class="footer-col-3">
-                        <h3>Useful Links</h3>
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Contact</li>
-                            <li>Cart</li>
-                            <li>Checkout</li>
-                        </ul>
-                    </div>
-                    <div class="footer-col-3">
-                        <h3>Follow Us</h3>
-                        <ul>
-                            <li>Account</li>
-                            <li>Custom</li>
-                            <li>Blinkee.com Resellers and Dropshippers</li>
-                            <li>Shipping Policy</li>
-                            <li>Return Policy</li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <p class="copyright">Copyright 2020 - Blinkee.com</p>
-            </div>
-        </section>
-    </footer>
-
-    <!-- <script src="bootstrap-input-spinner-master/src/bootstrap-input-spinner.js"></script>
-    <script>
-        $("input[type='number']").inputSpinner();
-    </script> -->
-
-    <!-- JS, Popper.js, and jQuery -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-
-            
         
+        
+<div class="container1">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <a href="Dashboard.html" class="btn solid btn-log login-1">Log In</a>
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <a href="Dashboard.html" class="btn btn-log login-1">Sign up</a>
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              ENTER YOUR PERSONAL DETAILS AND START JOURNEY WITH US
+            </p>
+            <button class="btn transparent btn-log" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="assets/log.svg" class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              TO KEEP CONNECTED WITH US, PLEASE LOGIN USING YOUR PERSONAL INFO
+            </p>
+            <button class="btn transparent btn-log" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="assets/register.svg" class="image" alt="" />
+        </div>
+      </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+                <footer>
+            <!--footer--->
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Download Our App</h3>
+                            <p>Download App for Android and ios mobile phone.</p>
+                            <div class="app-logo">
+                                <img src="assets/play-store.png">
+                                <img src="assets/app-store.png">
+                            </div>
+                        </div>
+                        <div class="footer-col-2">
+                            <img src="assets/logo.png" alt="">
+                            <p>Magic Matt’s Brilliant Blinkys provides exciting
+                                glow in the dark toys, flashing jewelry, blinking pins,
+                                flashy blinkys and accessories for the twenty-first century.</p>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li>Home</li>
+                                <li>About</li>
+                                <li>Contact</li>
+                                <li>Cart</li>
+                                <li>Checkout</li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li>Account</li>
+                                <li>Custom</li>
+                                <li>Blinkee.com Resellers and Dropshippers</li>
+                                <li>Shipping Policy</li>
+                                <li>Return Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright 2020 - Blinkee.com</p>
+                </div>
+            </section>
+        </footer>
+
+ <script src="js/login.js"></script>
     </body>
 </html>

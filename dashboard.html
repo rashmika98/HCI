@@ -8,6 +8,8 @@
         
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"> -->
         
         <!--Font Awsome CDN-->
@@ -19,11 +21,14 @@
         <!--Custom Stylesheet-->
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/dashboard.css">
+        <!-- <link rel="stylesheet" href="css/dash.css"> -->
+        <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/dashstyles.css">
         
 
         <!---jQuery---->
-        <script type="text/javascript"  src="js/checkout.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+        <!-- <script type="text/javascript"  src="js/checkout.js"></script> -->
 
         <!--lightslider.js-->
         <!-- <script type="text/javascript" src="js/lightslider.js"></script>
@@ -34,8 +39,22 @@
 
         <!--Slick Slider-->
         <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.nav_btn').click(function(){
+                $('.mobile_nav_items').toggleClass('active');
+              });
+
+              $(".card1").trigger('mousehover');
+            //   $('#sidebar_btn').click(function(){
+            //     $('.mobile_nav_items').toggleClass('active');
+            //   });
+            });
+            </script>
+
     </head>
     <body>
+        <input type="checkbox" id="check">
         
         <!-- Header -->
         <header>
@@ -43,12 +62,12 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-12 col-12">
                         <div class="btn-group">
-                            <button
-                                    class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                            >
-                                $-USD
+                            <button 
+                             class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                             aria-haspopup="true"
+                             aria-expanded="false"
+                             >
+                             $-USD
                             </button>
                             <div class="dropdown-menu">
                                 <a href="#" class="dropdown-item">ERU-Euro</a>
@@ -58,13 +77,13 @@
                     <div class="col-md-4 col-12 text-center">
                         <h2 class="my-md-3 site-title text-white">Blinkee Store</h2>
                     </div>
-                    <div class="col-md-4 col-12 text-right">
+                    <!-- <div class="col-md-4 col-12 text-right">
                         <p class="my-md-4 header-links">
-                            <a href="#" class="px-2">Sign In</a>
+                            <a href="#" class="px-2">Sign In </a>
                             <a href="#" class="bg-black-color">|</a>
                             <a href="#" class="px-1">Create an Account</a>
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="container-fluid p-0">
@@ -91,7 +110,7 @@
                                 <a class="nav-link" href="products.html">ABOUT US</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="samole.html">SAMPLE</a>
+                                <a class="nav-link" href="sample.html">SAMPLE</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="custom.html">CUSTOM</a>
@@ -103,13 +122,13 @@
                                 <a class="nav-link" href="#">BLOG</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ACCOUNT</a>
+                                <a class="nav-link" href="#">TESTIMONIALS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">CONTACT US</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ADVANCE</a>
+                                <a class="nav-link" href="#">RESELLER</a>
                             </li>
                         </ul>
                         <div class="navbar-nav text-left">
@@ -123,7 +142,7 @@
                                 <i class="far fa-heart p-2"></i>
                             </li>
                             <li class="nav-item border rounded-circle mx-2 basket-icon">
-                                <i class="fas fa-shopping-cart p-2"></i>
+                                <a href="cart.html"><i class="fas fa-shopping-cart p-2"></i></a>
                             </li>
                         </div>
                     </div>
@@ -133,138 +152,182 @@
         <!-- /Header -->
 
         <!-- main section -->
-        <div class="container-fluid p-0">
-
-            <div class="row dashboard-container">
-                <div class="col-md-3">
-                    <div class="sidebar">
-                        <div class="sidebar-wrapper">
-                            <div class="logo">
-                                <h4 class="title-dash text-center">Fatih Shekercizade</h4>
-                                <div class="border border-success rounded-circle user-icon text-center">
-                                    <i class="fas fa-user-alt fa-4x" aria-hidden="true"></i>
-                                </div>
-                            </div>
-
-
-                            
-                            <div class="active-bar text-center">
-                                    <ul class="nav">
-                                        <li class="active">
-                                            <a href="dashboard.html" id="row-link">
-                                                
-                                                <div class=" row sidebar-row-block"><i class="fab fa-gg-circle fa-2x"></i><h5>DASHBOARD</h5></div>
-                                            </a>
-                                        </li>
-
-                                        <li class="active">
-                                            <a href="orders.html" id="row-link">
-                                                <div class=" row sidebar-row-block"><i class="fas fa-box fa-2x"></i><h5>ORDERS</h5></div>
-                                            </a>
-                                        </li>
-
-                                        <li class="active">
-                                            <a href="downloads.html" id="row-link">
-                                                <div class=" row sidebar-row-block"><i class="fas fa-download fa-2x"></i><h5>DOWNLOADS</h5></div>
-                                            </a>
-                                        </li>
-
-                                        <li class="active1">
-                                            <a href="addresses.html" id="row-link">
-                                                <div class=" row sidebar-row-block"><i class="fas fa-map-marked-alt fa-2x"></i><h5>ADDRESSES</h5></div>
-                                            </a>
-                                        </li>
-
-                                        <li class="active1">
-                                            <a href="account.html" id="row-link">
-                                                <div class=" row sidebar-row-block"><i class="fas fa-file-invoice fa-2x"></i><h5>ACCOUNT DETAILS</h5></div>
-                                            </a>
-                                        </li>
-
-                                        <li class="active1">
-                                            <a href="login.html" id="row-link">
-                                                <div class=" row sidebar-row-block rounded-bottom"><i class="fas fa-sign-out-alt fa-2x"></i><h5>LOGOUT</h5></div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                            </div>
-                            
-                        </div>
-                    </div>
+        
+        <!--mobile navigation bar start-->
+        <!-- <div class="col-md-3"> -->
+            <div class="mobile_nav">
+                <div class="nav_bar">
+                    <img src="assets/1.png" class="mobile_profile_image" alt="">
+                    <i class="fa fa-bars nav_btn"></i>
                 </div>
-
-                <div class="col-md-9">
-                    <div class="dashboard-content">
-                        <div class="row">
-                            <h1>WELCOME TO BLINKEE.COM!<h1>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-2">
-                                <div class="card border-primary mb-3" style="max-width: 18rem;">
-                                    <div class="card-body text-primary">
-                                      <h5 class="card-text text-center">0</h5>
-                                      <p class="card-title text-center"></br>All Orders</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card border-info mb-3" style="max-width: 18rem;">
-                                    <div class="card-body text-info">
-                                      <h5 class="card-text  text-center">0</h5>
-                                      <p class="card-title text-center">Awaiting Payment</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card border-success mb-3" style="max-width: 18rem;">
-                                    <div class="card-body text-success">
-                                      <h5 class="card-text text-center">0</h5>
-                                      <p class="card-title text-center">Awaiting Shipment</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card border-warning mb-3" style="max-width: 18rem;">
-                                    <div class="card-body text-warning">
-                                      <h5 class="card-text text-center">0</h5>
-                                      <p class="card-title text-center">Awaiting Delivery</p>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="card border-info mb-3" style="max-width: 18rem;">
-                                    <div class="card-body text-info">
-                                      <h5 class="card-text text-center">0</h5>
-                                      <p class="card-title text-center"><br>Disputes</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="content-user-dashboard">
-                                <div class="card-dashboard">
-                                    <!-- <div class="card-body text-primary"> -->
-                                        <h5 class="card-content-title text-center">HELLO FATIH SHEKERCIZADE (not Fatih Shekercizade? 
-                                          <a href="" id = "row-dashboard-content">LOGOUT</a>)
-                                        </h5>
-                                      
-                                        <p class="card-title text-center card-content-text">From your account dashboard, you can view your 
-                                          <a href="" id = "row-dashboard-content">recent orders</a>,manage your
-                                          <a href="" id = "row-dashboard-content">shipping and billing addresses</a>. You can 
-                                          <a href="" id = "row-dashboard-content">edit your password and account details</a>.
-                                        </p>
-                                    <!-- </div> -->
-                                </div>
-                            </div>
-                        </div>
-                
-                    </div>
+                <div class="mobile_nav_items">
+                    <a href="#" ><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                    <a href="#"><i class="fas fa-box"></i><span>Orders</span></a>
+                    <a href="#"><i class="fas fa-download"></i><span>Downloads</span></a>
+                    <a href="#"><i class="fas fa-map-marked-alt"></i><span>Addresses</span></a>
+                    <a href="#"><i class="fas fa-user-edit"></i><span>Account Details</span></a>
+                    <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+                    <a href="#"><i class="fa fa-power-off"></i><span>logout</span></a>
                 </div>
             </div>
+            <!-- </div> -->
+            <!--mobile navigation bar end-->
+            
+            <!--sidebar start-->
+            <!-- <div class="col-md-2"> -->
+                <div class="sidebar">
+                    <div class="profile_info">
+                        <img src="assets/1.png" class="profile_image" alt="">
+                        <h4>Zeynep Shekercizade</h4>
+                    </div>
+                    <a href="Dashboard.html" class="active-bar"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                    <div class="icon-margin"></div>
+                    <a href="#"><i class="fas fa-box"></i><span>Orders</span></a>
+                    <a href="#"><i class="fas fa-download"></i><span>Downloads</span></a>
+                    <a href="DashAddresses.html"><i class="fas fa-map-marked-alt"></i><span>Addresses</span></a>
+                    <a href="DashboardAccount.html"><i class="fas fa-user-edit"></i><span>Account Details</span></a>
+                    <div class="space" style="margin-top: 150px;"></div>
+                    <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+                    <!-- <span><label for="check"><i class="fas fa-bars" id="sidebar_btn"></i>Togglebar</label></span> -->
+                    <a href="login.html"><i class="fa fa-power-off"></i><span>logout</span></a>
+                    <!-- <div class="space" style="padding-bottom: 50px;"></div> -->
+                </div>
+            </div>
+            <!--sidebar end-->
+            
+            
+            
+            <!-- <div class="col-md-9"> -->
+            <div class="content">
+                <div class="container-fluid p-0">
+                    <!-- <span><label for="check" class="test"><i class="fas fa-bars" id="sidebar_btn"></i>Togglebar</label></span> -->
+                    <div class="togglebar">
+                        <span><label for="check" class="test">Toggle Sidebar</label></span>
+                    </div>
 
-        </div>
+                    <!-- <div class="row dashboard-container">
+                        <div class="dashboard-content"> -->
+                            <div class="row head-title">
+                                <h3>WELCOME TO BLINKEE.COM!<h3>
+                            </div>
+
+                            <div class="row card-opt">
+                                <!-- <div class="col-md-2">
+                                    <div class="card border-primary mb-3 card-row-1" style="max-width: 18rem;">
+                                        <div class="card-body text-primary">
+                                        <h5 class="card-text text-center">0</h5>
+                                        <p class="card-title text-center"></br>All Orders</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- <div class="col-md-2"> -->
+                                    <div class="card1" href="#">
+                                        <h3><i class="fas fa-archive"></i>0</h3>
+                                        <p class="small">All Orders.</p>
+                                        <div class="go-corner" href="#">
+                                        <div class="go-arrow">
+                                            →
+                                        </div>
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+
+                                <!-- <div class="col-md-2">
+                                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-body text-info">
+                                        <h5 class="card-text  text-center">0</h5>
+                                        <p class="card-title text-center">Awaiting Payment</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="card2" href="#">
+                                    <h3><i class="fas fa-dollar-sign"></i>0</h3>
+                                    <p class="small">Awaiting Payment</p>
+                                    <div class="go-corner" href="#">
+                                    <div class="go-arrow">
+                                        →
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-md-2">
+                                    <div class="card border-success mb-3" style="max-width: 18rem;">
+                                        <div class="card-body text-success">
+                                        <h5 class="card-text text-center">0</h5>
+                                        <p class="card-title text-center">Awaiting Shipment</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="card3" href="#">
+                                    <h3><i class="fas fa-ship"></i>0</h3>
+                                    <p class="small">Awaiting Shipment</p>
+                                    <div class="go-corner" href="#">
+                                    <div class="go-arrow">
+                                        →
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-md-2">
+                                    <div class="card border-warning mb-3" style="max-width: 18rem;">
+                                        <div class="card-body text-warning">
+                                        <h5 class="card-text text-center">0</h5>
+                                        <p class="card-title text-center">Awaiting Delivery</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="card4" href="#">
+                                    <h3><i class="fas fa-shipping-fast"></i>0</h3>
+                                    <p class="small">Awaiting Delivery</p>
+                                    <div class="go-corner" href="#">
+                                    <div class="go-arrow">
+                                        →
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="col-md-2">
+                                    <div class="card border-info mb-3" style="max-width: 18rem;">
+                                        <div class="card-body text-info">
+                                        <h5 class="card-text text-center">0</h5>
+                                        <p class="card-title text-center"><br>Disputes</p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="card5" href="#">
+                                    <h3><i class="fas fa-dolly"></i>0</h3>
+                                    <p class="small">Disputes</p>
+                                    <div class="go-corner" href="#">
+                                    <div class="go-arrow">
+                                        →
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="content-user-dashboard" style="background-image: url('assets/back2.jpg'); ">
+                                    <div class="card-dashboard">
+                                        <!-- <div class="card-body text-primary"> -->
+                                            <h5 class="card-content-title text-center">HELLO FATIH SHEKERCIZADE (not Fatih Shekercizade? 
+                                            <a href="" id = "row-dashboard-content">LOGOUT</a>)
+                                            </h5>
+                                        
+                                            <p class="card-title card-content-text">From your account dashboard, you can view your 
+                                            <a href="" id = "row-dashboard-content">recent orders</a>.
+                                            
+                                            <p class="card-title card-content-text">Dashboard will manage your<a href="" id = "row-dashboard-content">shipping and billing addresses</a>. </p>
+                                           
+                                            <p class="card-title card-content-text">You can <a href="" id = "row-dashboard-content">edit your password and account details</a>.</p>
+                                        <!-- </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        <!-- </div>
+                    </div> -->
+                </div>
+            </div>
 
         <!-- end of the main section -->
 
@@ -320,10 +383,13 @@
         </script> -->
 
         <!-- JS, Popper.js, and jQuery -->
+
+
         <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 
+       
         
     </body>
 </html>
