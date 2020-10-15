@@ -42,10 +42,12 @@
     background-color: #1e06f7;
 }
 .card2 .go-corner{
-    background-color: #45ccb8;
+	/* background-color: #45ccb8; */
+	background-color: #0e918c;
 }
 .card3 .go-corner{
-    background-color: #f74a06;
+	/* background-color: #f74a06; */
+	background-color: #dd2c00;
 }
 .card4 .go-corner{
     background-color: #06c7f7;
@@ -111,22 +113,27 @@
 }
 
 .card1:before{
-	 background: #4506f1;
+	 /* background: #4506f1; */
+	 background: #0779e4;
 }  
 .card2:before{
-    background: #03fcd2;
+	/* background: #03fcd2; */
+	background: #2ec1ac;
 
 } 
 .card3:before{
-    background: #f13d06;
+	/* background: #f13d06; */
+	background: #ea5455;
 
 } 
 .card4:before{
-    background: #06cef1;
+	/* background: #06cef1; */
+	background: #28abb9;
 
 } 
 .card5:before{
-    background: #f10641;
+	/* background: #f10641; */
+	background: #ff4b5c;
 }
 
 @keyframes bummer {
