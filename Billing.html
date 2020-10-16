@@ -9,7 +9,7 @@
         <!-- Bootstrap CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css"> -->
         
         <!--Font Awsome CDN-->
@@ -40,17 +40,32 @@
         <!--Slick Slider-->
         <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
         <script type="text/javascript">
+            
             $(document).ready(function(){
               $('.nav_btn').click(function(){
                 $('.mobile_nav_items').toggleClass('active');
               });
-
-              $(".card1").trigger('mousehover');
-            //   $('#sidebar_btn').click(function(){
-            //     $('.mobile_nav_items').toggleClass('active');
-            //   });
             });
-            </script>
+
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+                }, false);
+                });
+                }, false);
+                })();
+
+        </script>
 
     </head>
     <body>
@@ -149,7 +164,7 @@
                 </nav>
             </div>
         </header>
-        <!-- /Header -->
+        <!-- Header -->
 
         <!-- main section -->
         
@@ -180,11 +195,11 @@
                         <img src="assets/1.png" class="profile_image" alt="">
                         <h4>Zeynep Shekercizade</h4>
                     </div>
-                    <a href="Dashboard.html" class="active-bar"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+                    <a href="Dashboard.html"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
                     <div class="icon-margin"></div>
                     <a href="#"><i class="fas fa-box"></i><span>Orders</span></a>
                     <a href="#"><i class="fas fa-download"></i><span>Downloads</span></a>
-                    <a href="DashAddresses.html"><i class="fas fa-map-marked-alt"></i><span>Addresses</span></a>
+                    <a href="DashAddresses.html" class="active-bar"><i class="fas fa-map-marked-alt"></i><span>Addresses</span></a>
                     <a href="DashboardAccount.html"><i class="fas fa-user-edit"></i><span>Account Details</span></a>
                     <div class="space" style="margin-top: 150px;"></div>
                     <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
@@ -200,137 +215,110 @@
             <!-- <div class="col-md-9"> -->
             <div class="content">
                 <div class="container-fluid p-0">
-                    <!-- <span><label for="check" class="test"><i class="fas fa-bars" id="sidebar_btn"></i>Togglebar</label></span> -->
                     <div class="togglebar">
-                        <span><label for="check" class="test">Toggle Sidebar</label></span>
-                    </div>
+                        <span><label for="check" class="test">Toggle Sidebar</label></span>   
+                    </div>                         
 
-                    <!-- <div class="row dashboard-container">
-                        <div class="dashboard-content"> -->
-                            <div class="row head-title">
-                                <h3>WELCOME TO BLINKEE.COM!<h3>
-                            </div>
-
-                            <div class="row card-opt">
-                                <!-- <div class="col-md-2">
-                                    <div class="card border-primary mb-3 card-row-1" style="max-width: 18rem;">
-                                        <div class="card-body text-primary">
-                                        <h5 class="card-text text-center">0</h5>
-                                        <p class="card-title text-center"></br>All Orders</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="col-md-2"> -->
-                                    <div class="card1" href="#">
-                                        <h3><i class="fas fa-archive"></i>0</h3>
-                                        <p class="small">All Orders.</p>
-                                        <div class="go-corner" href="#">
-                                        <div class="go-arrow">
-                                            →
-                                        </div>
-                                        </div>
-                                    </div>
-                                <!-- </div> -->
-
-                                <!-- <div class="col-md-2">
-                                    <div class="card border-info mb-3" style="max-width: 18rem;">
-                                        <div class="card-body text-info">
-                                        <h5 class="card-text  text-center">0</h5>
-                                        <p class="card-title text-center">Awaiting Payment</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="card2" href="#">
-                                    <h3><i class="fas fa-dollar-sign"></i>0</h3>
-                                    <p class="small">Awaiting Payment</p>
-                                    <div class="go-corner" href="#">
-                                    <div class="go-arrow">
-                                        →
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="col-md-2">
-                                    <div class="card border-success mb-3" style="max-width: 18rem;">
-                                        <div class="card-body text-success">
-                                        <h5 class="card-text text-center">0</h5>
-                                        <p class="card-title text-center">Awaiting Shipment</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="card3" href="#">
-                                    <h3><i class="fas fa-ship"></i>0</h3>
-                                    <p class="small">Awaiting Shipment</p>
-                                    <div class="go-corner" href="#">
-                                    <div class="go-arrow">
-                                        →
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="col-md-2">
-                                    <div class="card border-warning mb-3" style="max-width: 18rem;">
-                                        <div class="card-body text-warning">
-                                        <h5 class="card-text text-center">0</h5>
-                                        <p class="card-title text-center">Awaiting Delivery</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="card4" href="#">
-                                    <h3><i class="fas fa-shipping-fast"></i>0</h3>
-                                    <p class="small">Awaiting Delivery</p>
-                                    <div class="go-corner" href="#">
-                                    <div class="go-arrow">
-                                        →
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="col-md-2">
-                                    <div class="card border-info mb-3" style="max-width: 18rem;">
-                                        <div class="card-body text-info">
-                                        <h5 class="card-text text-center">0</h5>
-                                        <p class="card-title text-center"><br>Disputes</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="card5" href="#">
-                                    <h3><i class="fas fa-dolly"></i>0</h3>
-                                    <p class="small">Disputes</p>
-                                    <div class="go-corner" href="#">
-                                    <div class="go-arrow">
-                                        →
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                    <div class="row">
+                    
+                        <div class="shipping-content">
                             <div class="row">
-                                <div class="content-user-dashboard" style="background-image: url('assets/back02.jpg'); opacity:0.97;">
-                                    <div class="card-dashboard">
-                                        <!-- <div class="card-body text-primary"> -->
-                                            <h5 class="card-content-title text-center">HELLO ZEYNEP SHEKERCIZADE (not Zeynep Shekercizade? 
-                                            <a href="login.html" id = "row-dashboard-content">LOGOUT</a>)
-                                            </h5>
+                                <h2>BILLING ADDRESS<h2>
+                            </div>
+    
+                            <div class="row">
+                                <div class="content-user-dashboard-shipping">
+                                    <form class="needs-validation" novalidate>
                                         
-                                            <p class="card-title card-content-text">From your account dashboard, you can view your 
-                                            <a href="" id = "row-dashboard-content">recent orders</a>.
-                                            
-                                            <p class="card-title card-content-text">Dashboard will manage your<a href="DashAddresses.html" id = "row-dashboard-content">shipping and billing addresses</a>. </p>
-                                           
-                                            <p class="card-title card-content-text">You can <a href="DashboardAccount.html" id = "row-dashboard-content">edit your password and account details</a>.</p>
-                                            <section>
-                                                <div class="wavee" style="background: url(wave.png);"></div>
-                                                <div class="wave" style="background: url(wave.png);"></div>
-                                                <div class="waves" style="background: url(wave.png);"></div>
-                                            </section>
-                                        <!-- </div> -->
-                                    </div>
+                                        <div class="form-row row-section-one">
+                                            <div class="col-md-5 mb-3 md-form">
+                                                <label for="validationCustom012" class="required">First name</label>
+                                                <input type="text" class="form-control" id="validationCustom012" placeholder="First name"
+                                                required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please enter first name.
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 mb-3 md-form">
+                                                <label for="validationCustom022" class="required">Last name</label>
+                                                <input type="text" class="form-control" id="validationCustom022" placeholder="Last name"
+                                                required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                                <div class="invalid-feedback">
+                                                    Please enter last name.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-row row-section-two">
+                                            <div class="col-md-10 mb-3 md-form">
+                                                <label for="validationCustomUsername2">Company Name</label>
+                                                <input type="text" class="form-control" id="validationCustomUsername2" aria-describedby="inputGroupPrepend2" placeholder="Optional">
+                                            </div>
+                                        </div>
+    
+                                        <div class="form-row row-section-three">
+                                            <div class="col-md-6 mb-3 md-form">
+                                                <label for="validationCustomCountry" class="required">Country</label>
+                                                    <select class="custom-select browser-default" id="validationCustomCountry" required>
+                                                        <option value="">Select</option>
+                                                        <option value="England">England</option>
+                                                        <option value="France">France</option>
+                                                        <option value="Germany">Germany</option>
+                                                        <option value="Ireland">Ireland</option>
+                                                        <option value="Japan">Japan</option>
+                                                        <option value="Switzerland">Switzerland</option>
+                                                    </select>
+                                                <div class="invalid-feedback">Please select country</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="form-row row-section-four">
+                                          <div class="col-md-10 mb-3 md-form">
+                                            <label for="validationCustom032" class="required">Street Adress</label>
+                                            <input type="text" class="form-control" id="validationCustom032" required>
+                                            <!-- <input type="text" class="form-control" id="validationCustom032" required> -->
+                                            <div class="invalid-feedback">
+                                              Please provide a valid address.
+                                            </div>
+                                          </div>
+                                        </div>
+    
+                                        <div class="form-row row-section-five">
+                                          <div class="col-md-5 mb-3 md-form">
+                                            <label for="validationCustom042" class="required">City</label>
+                                            <input type="text" class="form-control" id="validationCustom042" required>
+                                            <div class="invalid-feedback">
+                                              Please provide a valid City.
+                                            </div>
+                                          </div>
+                                          <div class="col-md-5 mb-3 md-form">
+                                            <label for="validationCustom052" class="required">Postcode / Zip</label>
+                                            <input type="text" class="form-control" id="validationCustom052" required>
+                                            <div class="invalid-feedback">
+                                              Please provide a valid zip.
+                                            </div>
+                                          </div>
+                                        </div>
+                                        
+                                        <button class="btn btn-primary btn-lg btn-rounded" type="submit">Save Address</button>
+    
+                                    </form>
                                 </div>
                             </div>
                     
-                        <!-- </div>
-                    </div> -->
+                        </div>
+
+                    </div>
+
+
+
+
                 </div>
             </div>
 
