@@ -296,7 +296,8 @@ label #sidebar_btn:hover{
 }
 
 .card-content-title{
-  color: #000;
+  /* color: #000; */
+  color: #fff;
   font-size: 30px;
 }
 
@@ -314,19 +315,20 @@ label #sidebar_btn:hover{
 }
 
 #row-dashboard-content{
-  text-decoration: underline;
-  color: rgb(83, 148, 39);
+  text-decoration: none;
+  color: #eef8ff;
+  /* color: rgb(83, 148, 39); */
 }
 
 #row-dashboard-content:hover{
-  color: white;
-  background: linear-gradient(to right,#feb154,#45ccb8);
+  color: #C31F48;
+  /* background: linear-gradient(to right,#feb154,#45ccb8); */
 }
 
 .card-content-text{
-  /* color: #fff; */
-  color: #000;
-  margin: 80px 40px 40px 40px;
+  color: #fff;
+  /* color: #000; */
+  margin: 40px 40px 20px 200px;
   font-size: 25px;
 }
 
@@ -604,4 +606,57 @@ form label.required:after
     width: 500px !important;
     display: flow-root;
   } */
+}
+
+
+
+
+
+
+section .wave{
+  position: absolute;
+  height: 143px;
+  width: 1099px;
+  animation: animate 10s linear infinite;
+  opacity: 0.7;
+  margin-top: 34px;
+}
+section .waves{
+  position: absolute;
+  height: 143px;
+  width: 1100px;
+  animation: animate-reverse 10s linear infinite;
+  opacity: 0.4;
+  margin-top: 34px;
+}
+
+
+section .wavee{
+  height: 143px;
+  width: 1100px;
+  position: absolute;
+  opacity: 0.6;
+  animation-delay: -5s;
+  animation: animate 20s linear infinite;
+  margin-top: 34px;
+}
+
+@keyframes animate{
+  0%{
+      background-position: 0;
+  }
+
+  100%{
+      background-position: 1360px;
+  }
+}
+
+@keyframes animate-reverse{
+  0%{
+      background-position: 1360px;
+  }
+
+  100%{
+      background-position: 0;
+  }
 }
