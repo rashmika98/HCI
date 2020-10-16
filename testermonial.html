@@ -1,16 +1,29 @@
 <!DOCTYPE html>
+<html lang = "en">
 <head>
-    <link rel="stylesheet" href="css1.css">
-    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blinkee</title>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    <link rel="stylesheet" href="css/cssRan.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/customRan.css">
+    <script href='js/animeRan.js'></script>
+
+    <!--Favicon Slider-->
+    <link rel="shortcut icon" href="assets/favB.png">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 </head>
-<body id="body">
+<body style="background-color:#eef8ff ">
 <!-- Header -->
-<div id="header1">  
-    <header >
+
+    <!-- Header -->
+    <header>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12 col-12">
@@ -32,9 +45,9 @@
                 </div>
                 <div class="col-md-4 col-12 text-right">
                     <p class="my-md-4 header-links">
-                        <a href="#" class="px-2">Sign In</a>
-                        <a href="#" class="bg-black-color">|</a>
-                        <a href="#" class="px-1">Create an Account</a>
+                        <a href="login.html" class="px-2">Sign In Or Create an Account</a>
+                        <!--                            <a href="#" class="bg-black-color">|</a>-->
+                        <!--                            <a href="#" class="px-1">Create an Account</a>-->
                     </p>
                 </div>
             </div>
@@ -60,13 +73,28 @@
                             <a class="nav-link" href="products.html">PRODUCTS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FEATURES</a>
+                            <a class="nav-link" href="products.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SHOP</a>
+                            <a class="nav-link" href="sample.html">SAMPLE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="custom.html">CUSTOM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">ACCOUNT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="testermonial.html">TESTIMONIALS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactus1.html">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reseller.html">RESELLER</a>
                         </li>
                     </ul>
                     <div class="navbar-nav text-left">
@@ -80,23 +108,36 @@
                             <i class="far fa-heart p-2"></i>
                         </li>
                         <li class="nav-item border rounded-circle mx-2 basket-icon">
-                            <i class="fas fa-shopping-cart p-2"></i>
+                            <a href="cart.html"><i class="fas fa-shopping-cart p-2"></i></a>
                         </li>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-</div>
+    <!-- /Header -->
+
 <!-- /Header -->
-<div id="para" >
-    <h2 id= "parahead">Blinkee.com Testimonials</h2>
-   <p id="para1"> Magic Matt’s Brilliant Blinkys strives to provide the best product quality and 
-       customer service possible. Please read some actual email threads from past customers.
-        Please note these are real unedited emails. When shipping thousands of blinkys there are bound to be
-         some problems and mistakes. The key is how they are resolved. These emails illustrate our commitment to excellence:
-    </p>
-</div>
+<div class="container">
+<div class="row"><div class="col-md-3"></div>
+<div class="col-md-6 text-center">
+<div class="card-container text-center">
+    <div class="box">
+        <div class="imgBox"><img src="assets/Testimonials.jpg" alt="" /></div>
+        <div class="details">
+            <div class="content">
+                <h2>Blinkee.com Testimonials</h2>
+                <p>
+                    Magic Matt’s Brilliant Blinkys strives to provide the best product quality and
+                    customer service possible. Please read some actual email threads from past customers.
+                    Please note these are real unedited emails. When shipping thousands of blinkys there are bound to be
+                    some problems and mistakes. The key is how they are resolved. These emails illustrate our commitment to excellence:
+                </p>
+            </div>
+        </div>
+    </div>
+</div></div>
+</div></div>
 <div class="container-fluid my-5 justify-content-center">
     <div class=" row justify-content-center ">
         <div class="col-lg-4 col-12 mt-5 ">
@@ -272,53 +313,73 @@
             </div>
         </div>
 </div>
-
-
-<footer>
-    <!--footer--->
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download Our App</h3>
-                    <p>Download App for Android and ios mobile phone.</p>
-                    <div class="app-logo">
-                        <img src="assets/play-store.png">
-                        <img src="assets/app-store.png">
+    <div class="row text-center"><div class="col-md-5"></div>
+        <div class="col-md-2 " style="margin-left: 10px;">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active">
+              <span class="page-link">
+                2
+                <span class="sr-only">(current)</span>
+              </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+    </div><div class="col-md-5"></div>
+</div>
+    <footer>
+        <!--footer--->
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="assets/play-store.png">
+                            <img src="assets/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="assets/blinkee.png" alt="logo">
+                        <p>Magic Matt’s Brilliant Blinkys provides exciting
+                            glow in the dark toys, flashing jewelry, blinking pins,
+                            flashy blinkys and accessories for the twenty-first century.</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                            <li>Cart</li>
+                            <li>Checkout</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Account</li>
+                            <li>Custom</li>
+                            <li>Blinkee.com Resellers and Dropshippers</li>
+                            <li>Shipping Policy</li>
+                            <li>Return Policy</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="footer-col-2">
-                    <img src="assets/logo.png" alt="">
-                    <p>Magic Matt’s Brilliant Blinkys provides exciting
-                        glow in the dark toys, flashing jewelry, blinking pins,
-                        flashy blinkys and accessories for the twenty-first century.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        <li>Cart</li>
-                        <li>Checkout</li>
-                    </ul>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Account</li>
-                        <li>Custom</li>
-                        <li>Blinkee.com Resellers and Dropshippers</li>
-                        <li>Shipping Policy</li>
-                        <li>Return Policy</li>
-                    </ul>
-                </div>
+                <hr>
+                <p class="copyright">Copyright 2020 - Blinkee.com</p>
             </div>
-            <hr>
-            <p class="copyright">Copyright 2020 - kusalchathuranga2@gmail.com</p>
-        </div>
-    </section>
-</footer>
+        </section>
+    </footer>
 </body>
 
 
